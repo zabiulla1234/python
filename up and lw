@@ -1,0 +1,11 @@
+s="r"
+up=0
+lw=0
+while(s not in "a,e,i,o,u,A,E,I,O,U"):
+    s=input("enter any alphabet")
+    if s.isupper():
+        up=up+1
+    else:
+        lw=lw+1
+print("uppercase letters entered:",up)
+print("lowercase letters entered:",lw)
