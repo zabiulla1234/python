@@ -1,0 +1,14 @@
+a="AAABBAABBCC"
+result=""
+count=1
+for i in range(1,len(a)):
+    if a[i-1]==a[i]:
+        count+=i
+        print(count)
+        continue
+    else:
+        result=result+a[i-1]+str(count)
+        count=i
+        continue
+result=result+a[i-1]+str(count)
+print(result)
