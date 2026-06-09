@@ -1,0 +1,23 @@
+def prime(n):
+    if n==1 or n==0:
+        return False
+    for i in range(2,n):
+        if(n%i==0):
+            return False
+        return True
+        
+def sod(n):
+    l=[int(i) for i in str(n)]
+    return sum(l)
+    
+def every(n):
+    while(n>0):
+        d=n%10
+        if not prime(d):
+            return False
+        n=n//10
+    return True
+    
+for i in range(100,1000):
+    if prime(i) and prime(sod(i)) and every(i):
+        print(i,end=" ")
