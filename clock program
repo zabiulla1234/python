@@ -1,0 +1,6 @@
+import time
+import sys
+while True:
+    sys.stdout.write(time.strftime("\r%H:%H;%S"))
+    sys.stdout.flush()
+    time.sleep(1)
