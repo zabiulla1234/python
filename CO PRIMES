@@ -1,0 +1,15 @@
+def cop(a,b):
+    return deepika(a,b)==1
+def deepika (a,b):
+    while(b!=0):
+        rem=a%b
+        a=b
+        b=rem
+        return a
+
+n=int(input("enter any num:"))
+for a in range(3,n):
+    for b in range(4,a):
+        for c in range(5,b):
+            if c*c + b*b == a*a:
+                print(c,b,a)
