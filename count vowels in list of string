@@ -1,0 +1,2 @@
+a = ["Raju", "Ram", "ravi"]
+print([sum(1 for c in x.lower() if c in "aeiou") for x in a])
